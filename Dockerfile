@@ -1,3 +1,3 @@
 FROM nginx:alpine
-COPY app/ /usr/share/nginx/html/
+COPY webapp/ /usr/share/nginx/html/
 EXPOSE 80
