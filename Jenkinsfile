@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDS = credentials('dockerhub-creds')
+        DOCKERHUB_CREDS = credentials('docker-creds')
         IMAGE_NAME      = "dhish01/devops-webserver"
         APP_SERVER      = "ubuntu@3.107.16.180"
     }
