@@ -32,7 +32,7 @@ pipeline {
         stage('Push to DockerHub') {
             steps {
                 sh '''
-                echo $DOCKERHUB_CREDS_PSW | docker login -u $docker-creds --password-stdin
+                echo $DOCKERHUB_CREDS_PSW | docker login -u $DOCKERHUB_CREDS_USR --password-stdin
                 docker push $IMAGE_NAME:$BUILD_NUMBER
                 docker push $IMAGE_NAME:latest
                 '''
