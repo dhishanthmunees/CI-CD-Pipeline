@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDS = credentials('docker-creds')
         IMAGE_NAME      = "dhish01/devops-webserver"
-        APP_SERVER      = "ubuntu@3.107.16.180"
+        APP_SERVER      = "ubuntu@15.134.203.199"
     }
 
     stages {
